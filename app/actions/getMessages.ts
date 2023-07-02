@@ -18,7 +18,7 @@ const getMessages = async (
         })
         return messages
     } catch (error:any) {
-        return null
+        return []
     }
 }
 export default getMessages

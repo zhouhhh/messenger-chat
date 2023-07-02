@@ -13,7 +13,7 @@ interface BodyProps{
 }
 
 const Body: React.FC<BodyProps> = ({
-    initialMessages
+    initialMessages=[]
 }) => {
     const [messages, setMessages] = useState(initialMessages)
     const bottomRef = useRef<HTMLDivElement>(null)
